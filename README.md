@@ -206,7 +206,7 @@ chmod +x find_duplicates.sh
 ```
 ./find_duplicates.sh /root
 ```
-![image](https://github.com/user-attachments/assets/e2fae896-ea7b-4da4-bd57-6fc6fcf98387)
+![image](https://github.com/user-attachments/assets/1bab1eb5-c95d-480f-a387-8a8864e0ff59)
 
 
 
