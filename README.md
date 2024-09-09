@@ -10,6 +10,7 @@ grep '.*' /etc/passwd | cut -d':' -f1 | sort
 ```
 cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -5
 ```
+![image](https://github.com/user-attachments/assets/0eb7ef82-030d-4185-9843-c25eb0583bb6)
 
 
 # Задание 3
@@ -46,6 +47,7 @@ chmod +x banner.sh
 #запуск скрипта
 ./banner.sh "Hello from RTU MIREA!"
 ```
+![image](https://github.com/user-attachments/assets/5684973e-6485-4084-849d-a9000da610d9)
 
 
 # Задание 4
@@ -67,6 +69,7 @@ int main() {
 ```
 grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' hello.c | sort | uniq
 ```
+![image](https://github.com/user-attachments/assets/da79ac58-5018-4ded-b446-4fc07d82b970)
 
 
 
@@ -120,6 +123,7 @@ ls -l /usr/local/bin/banner.sh
 ```
 banner.sh "Hello from RTU MIREA!"
 ```
+![image](https://github.com/user-attachments/assets/70fd607e-f7e9-4a44-886b-dfae77e44d0f)
 
 
 # Задание 6
@@ -174,6 +178,7 @@ ls -R
 ```
 cat check_comments.sh
 ```
+![image](https://github.com/user-attachments/assets/ce13b7b8-a1af-4e2f-9f95-725cbbec8398)
 
 
 # Задание 7
@@ -201,6 +206,7 @@ chmod +x find_duplicates.sh
 ```
 ./find_duplicates.sh /root
 ```
+![image](https://github.com/user-attachments/assets/e2fae896-ea7b-4da4-bd57-6fc6fcf98387)
 
 
 
@@ -245,6 +251,7 @@ ls -l
 ```
 ls -ld
 ```
+![image](https://github.com/user-attachments/assets/55316458-e194-4419-9e69-4b740333cd3f)
 
 
 
@@ -292,6 +299,7 @@ cat output.txt
 ```
 od -c output.txt
 ```
+![image](https://github.com/user-attachments/assets/b3323cf3-f133-44bd-84ee-f0806001cde0)
 
 
 
@@ -321,3 +329,4 @@ find "$directory" -type f -empty -exec file {} \; | grep "empty" | cut -d: -f1
 ```
 find /home/testdir -maxdepth 1 -type f -size 0c
 ```
+![image](https://github.com/user-attachments/assets/2053ad36-dbb8-4a80-ab22-cef22b000e3b)
