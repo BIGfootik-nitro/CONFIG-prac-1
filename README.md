@@ -1,7 +1,8 @@
 # CONFIG-prac-1
 # Задание 1
+```
 grep '.*' /etc/passwd | cut -d':' -f1 | sort
-
+```
 
 
 # Задание 2
@@ -11,7 +12,9 @@ cat /etc/protocols | awk '{print $2, $1}' | sort -nr | head -5
 
 
 # Задание 3
-1. nano banner.sh
+```
+nano banner.sh
+```
 
 ```
 #!/bin/bash
@@ -34,10 +37,12 @@ echo "| $text |"
 # Вывод нижней границы
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
 ```
-
-3.chmod +x banner.sh (сделали файл исполняемым)
-4. ./banner.sh "Hello from RTU MIREA!" (запуск скрипта)
-
+```
+chmod +x banner.sh (сделали файл исполняемым)
+```
+```
+./banner.sh "Hello from RTU MIREA!" (запуск скрипта)
+```
 
 
 # Задание 4
