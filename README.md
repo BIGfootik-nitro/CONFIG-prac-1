@@ -38,10 +38,12 @@ echo "| $text |"
 echo "+$(printf -- '-%.0s' $(seq 1 $border_length))+"
 ```
 ```
-chmod +x banner.sh (сделали файл исполняемым)
+#сделали файл исполняемым
+chmod +x banner.sh
 ```
 ```
-./banner.sh "Hello from RTU MIREA!" (запуск скрипта)
+#запуск скрипта
+./banner.sh "Hello from RTU MIREA!"
 ```
 
 
