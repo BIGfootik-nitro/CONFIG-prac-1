@@ -48,8 +48,10 @@ chmod +x banner.sh
 
 
 # Задание 4
-1. nano hello.c
-2. 
+```
+nano hello.c
+```
+```
 #include <stdio.h>
 
 void hello() {
@@ -60,14 +62,19 @@ int main() {
     hello();
     return 0;
 }
-3. grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' hello.c | sort | uniq
+```
+```
+grep -o -E '\b[_a-zA-Z][_a-zA-Z0-9]*\b' hello.c | sort | uniq
+```
 
 
 
 
 # Задание 5
-1. nano reg
-2.
+```
+nano reg
+```
+```
 #!/bin/bash
  
 if [ $# -ne 1 ]; then
@@ -90,19 +97,35 @@ else
         echo "Команда $command не найдена."
         exit 1
 fi
-3. chmod +x reg
-4. ./reg banner.sh
-показ:
-1. cat reg
-2. ./reg banner.sh
-3. sudo cp banner.sh /usr/local/bin/  (если ошибка по 4 пункту)
-4. ls -l /usr/local/bin/banner.sh
-5. banner.sh "Hello from RTU MIREA!"
+```
+```
+chmod +x reg
+```
+```
+./reg banner.sh
+```
+```
+cat reg
+```
+```
+./reg banner.sh
+```
+```
+sudo cp banner.sh /usr/local/bin/
+```
+```
+ls -l /usr/local/bin/banner.sh
+```
+```
+banner.sh "Hello from RTU MIREA!"
+```
 
 
 # Задание 6
-1.  nano check_comments.sh
-2.  
+```
+nano check_comments.sh
+```
+```
 #!/bin/bash
  
 if [ $# -ne 1 ]; then
@@ -134,16 +157,29 @@ check_comment() {
                 fi
         fi
 }
-3. chmod +x check_comments.sh
-4. pwd
-5. ls -R
-6. ./check_comments.sh .
-7. cat check_comments.sh
+```
+```
+chmod +x check_comments.sh
+```
+```
+pwd
+```
+```
+ls -R
+```
+```
+./check_comments.sh
+```
+```
+cat check_comments.sh
+```
 
 
 # Задание 7
-1. nano find_duplicates.sh
-2.
+```
+nano find_duplicates.sh
+```
+```
 #!/bin/bash
 
 if [ $# -ne 1 ]; then
@@ -157,14 +193,21 @@ directory="$1"
 find "$directory" -type f -print0 | xargs -0 md5sum | sort | uniq -d -w 32 | sed -r 's/^[0-9a-f]*( )//' | while read -r duplicate; do
   echo "Дубликат: $duplicate"
 done
-3. chmod +x find_duplicates.sh
-4. ./find_duplicates.sh /root
+```
+```
+chmod +x find_duplicates.sh
+```
+```
+./find_duplicates.sh /root
+```
 
 
 
 # Задание 8
-1. nano archive_files.sh
-2. 
+```
+nano archive_files.sh
+```
+```
 #!/bin/bash
 
 if [ $# -ne 2 ]; then
@@ -188,16 +231,27 @@ fi
 tar -czvf "$archive_name.tar.gz" $files
 
 echo "Файлы с расширением .$extension были архивированы в $archive_name.tar.gz"
-3. ./archive_files.sh txt myarchive
-4. tar -tzvf myarchive.tar.gz
-5. ls -l
-6. ls -ld .
+```
+```
+./archive_files.sh txt myarchive
+```
+```
+tar -tzvf myarchive.tar.gz
+```
+```
+ls -l
+```
+```
+ls -ld
+```
 
 
 
 # Задание 9
-1. nano replace_spaces.sh
-2. 
+```
+nano replace_spaces.sh
+```
+```
 #!/bin/bash
 
 if [ $# -ne 2 ]; then
@@ -218,18 +272,33 @@ fi
 sed 's/    /\t/g' "$input_file" > "$output_file"
 
 echo "Замена завершена. Результат сохранен в $output_file."
-3. chmod +x replace_spaces.sh
-4. echo "This is a test file with    four spaces." > input.txt
-5. cat input.txt
-6. ./replace_spaces.sh input.txt output.txt
-7. cat output.txt
-8. od -c output.txt
+```
+```
+chmod +x replace_spaces.sh
+```
+```
+echo "This is a test file with    four spaces." > input.txt
+```
+```
+cat input.txt
+```
+```
+./replace_spaces.sh input.txt output.txt
+```
+```
+cat output.txt
+```
+```
+od -c output.txt
+```
 
 
 
 # Задание 10
-1. nano find_empty_files.sh
-2.
+```
+nano find_empty_files.sh
+```
+```
 #!/bin/bash
 
 if [ $# -ne 1 ]; then
@@ -247,4 +316,7 @@ fi
 
 ##Поиск пустых текстовых файлов
 find "$directory" -type f -empty -exec file {} \; | grep "empty" | cut -d: -f1
-3. find /home/testdir -maxdepth 1 -type f -size 0c
+```
+```
+find /home/testdir -maxdepth 1 -type f -size 0c
+```
