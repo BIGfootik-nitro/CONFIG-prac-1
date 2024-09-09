@@ -3,6 +3,7 @@
 ```
 grep '.*' /etc/passwd | cut -d':' -f1 | sort
 ```
+![image](https://github.com/user-attachments/assets/9f084527-d314-407d-992f-78a87bcdd5d0)
 
 
 # Задание 2
